@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Java DOM</title>
+    <style>
+        html{
+            text-align: center;
+            padding: 20px;
+        }
+        form{
+            display: inline-block;
+            padding: 10px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+        form input{
+            display: block;
+            padding: 1rem;
+            margin: 2rem;
+            border-radius: 16px;
+
+        }
+    </style>
+</head>
+<body>
+   
+   
+    <h1>
+        I'M VICTOR LAWANI 
+    </h1>
+    <p>
+        I am about to work on my DOM Manipulation.
+    </p>
+    <form action="
+    ">
+    <input type="text" placeholder = "fullname" value="victor">
+    <input type="email" placeholder="email" value="victor@gmail.com">
+    <input type="email" placeholder="select" value="lawani">
+    <input type="URL" placeholder="URL" value="www.gmail.com">
+    <input type="checkbox" name="Click to remember Password" id="" value="checkbox">
+    <button>Submit</button>
+
+</form>
+<script>
+   let list = document.getElementsByTagName('input');
+   
+   for (i=0; i < list.length; i++){
+   
+    console.log(list[i].value)
+}
+</script>
+</body>
+</html>
